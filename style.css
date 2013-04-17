@@ -1,55 +1,101 @@
-	.wheelContainer {
-          height: 2000px;
-          position: fixed;
-          left: 25%;
-          top: 25%;
-          /*margin-left: -150px;*/
-          /*margin-top: -150px;*/
-     }
-     .wheelBackground {
-          background-color: grey;
-          position: absolute;
-          width: 1000px;
-          height: 1000px;
-          -moz-border-radius: 2000px;
-          -webkit-border-radius: 2000px;
-          -o-border-radius: 2000px;
-          border-radius: 2000px;
-          -moz-box-shadow: -1px 1px 3px #000;
-          -webkit-box-shadow: -1px 1px 3px #000;
-          -o-box-shadow: -1px 1px 3px #000;
-          box-shadow: -1px 1px 3px #000;
-    } 
-	#wheelSpokeBlue .pie {
-          background-color: #1b458b;
-          -webkit-transform:rotate(180deg);
-          -moz-transform:rotate(180deg);
-          -o-transform:rotate(180deg);
-          transform:rotate(180deg);
-     }
-     #wheelSpokeBlue2 {
-          -webkit-transform:rotate(180deg);
-          -moz-transform:rotate(180deg);
-          -o-transform:rotate(180deg);
-          transform:rotate(180deg);
-     }
-     #wheelSpokeBlue2 .pie {
-          background-color: #1b458b;
-          -webkit-transform:rotate(40deg);
-          -moz-transform:rotate(40deg);
-          -o-transform:rotate(40deg);
-          transform:rotate(40deg);
-     }
-     #wheelSpokeRed {
-          -webkit-transform:rotate(220deg);
-          -moz-transform:rotate(220deg);
-          -o-transform:rotate(220deg);
-          transform:rotate(220deg);
-     }
-     #wheelSpokeRed .pie {
-          background-color: #cc0000;
-          -webkit-transform:rotate(140deg);
-          -moz-transform:rotate(140deg);
-          -o-transform:rotate(140deg);
-          transform:rotate(140deg);
-     }
+body {
+	margin: 0;
+	padding: 0;
+}
+::root {
+	/*Ddiameter variable for the circle */
+	-moz-var-diameter: 1000px; /* Firefox */
+    -webkit-var-diameter: 1000px; /* Safari */
+    -ms-var-diameter: 1000px; /* IE */
+    -o-var-diameter: 1000px; /* Opera */
+    var-diameter: 1000px;
+    	
+    /*radius variable for the circle */
+    -moz-var-radius: 500px; /* Firefox */
+    -webkit-var-radius: 500px; /* Safari */
+    -ms-var-radius: 500px; /* IE */
+    -o-var-radius: 500px; /* Opera */
+    var-radius: 500px;
+}
+.wheelContainer {
+    height: 1000px;
+    width: 1000px;
+    margin 0 auto;
+}
+.wheelBackground {
+    background-color: grey;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    -moz-border-radius: 1000px; /* Firefox */
+    -webkit-border-radius: 1000px; /* Safari */
+    -ms-border-radius: 1000px; /* IE */
+    -o-border-radius: 1000px; /* Opera */
+    border-radius: 1000px;
+    -moz-box-shadow: -1px 1px 3px #000; /* Firefox */
+    -webkit-box-shadow: -1px 1px 3px #000; /* Safari */
+    -ms-box-shadow: -1px 1px 3px #000; /* IE */
+    -o-box-shadow: -1px 1px 3px #000; /* Opera */
+    box-shadow: -1px 1px 3px #000;
+}
+.spoke {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    -moz-border-radius: 250px; /* Firefox */
+    -webkit-border-radius: 250px; /* Safari */
+    -ms-border-radius: 250px; /* IE */
+    -o-border-radius: 250px; /* Opera */
+    border-radius: 250px;
+    clip: rect(0px, 250px, 500px, 0px);
+}
+.hold {
+    position: absolute;
+    background-color: #1b458b;
+    width: 500px;
+    height: 500px;
+    -moz-border-radius: 250px; /* Firefox */
+    -webkit-border-radius: 250px; /* Safari */
+    -ms-border-radius: 250px; /* IE */
+    -o-border-radius: 250px; /* Opera */
+    border-radius: 250px;
+    clip: rect(0px, 500px, 500px, 250px);
+}
+#wheelSpokeBlue .spoke {
+    background-color: #1b458b;
+    -moz-transform:rotate(180deg); /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari */
+    -ms-transform:rotate(180deg); /* IE */
+    -o-transform:rotate(180deg); /* Opera */
+    transform:rotate(180deg);
+}
+#wheelSpokeBlue2 {
+    -moz-transform:rotate(180deg); /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari */
+    -ms-transform:rotate(180deg); /* IE */
+    -o-transform:rotate(180deg); /* Opera */
+    transform:rotate(180deg);
+}
+#wheelSpokeBlue2 .spoke {
+    background-color: #1b458b;
+    -moz-transform:rotate(40deg); /* Firefox */
+    -webkit-transform:rotate(40deg); /* Safari */
+    -ms-transform:rotate(40deg); /* IE */
+    -o-transform:rotate(40deg); /* Opera */
+    transform:rotate(40deg);
+}
+#wheelSpokeRed {
+    -moz-transform:rotate(220deg); /* Firefox */
+    -webkit-transform:rotate(220deg); /* Safari */
+    -ms-transform:rotate(220deg); /* IE */
+    -o-transform:rotate(220deg); /* Opera */
+    transform:rotate(220deg);
+}
+#wheelSpokeRed .spoke {
+    background-color: #cc0000;
+    -moz-transform:rotate(140deg); /* Firefox */
+    -webkit-transform:rotate(140deg); /* Safari */
+    -webkit-transform:rotate(140deg); /* IE */
+    -o-transform:rotate(140deg); /* Opera */
+    transform:rotate(140deg);
+}
