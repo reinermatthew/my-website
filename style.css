@@ -1,9 +1,10 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: grey;
 }
 ::root {
-	/*Ddiameter variable for the circle */
+	/*diameter variable for the circle */
 	-moz-var-diameter: 1000px; /* Firefox */
     -webkit-var-diameter: 1000px; /* Safari */
     -ms-var-diameter: 1000px; /* IE */
@@ -17,85 +18,59 @@ body {
     -o-var-radius: 500px; /* Opera */
     var-radius: 500px;
 }
-.wheelContainer {
-    height: 1000px;
-    width: 1000px;
-    margin 0 auto;
+
+/*classes*/
+.menuBar {
+
 }
-.wheelBackground {
-    background-color: grey;
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    -moz-border-radius: 1000px; /* Firefox */
-    -webkit-border-radius: 1000px; /* Safari */
-    -ms-border-radius: 1000px; /* IE */
-    -o-border-radius: 1000px; /* Opera */
-    border-radius: 1000px;
-    -moz-box-shadow: -1px 1px 3px #000; /* Firefox */
-    -webkit-box-shadow: -1px 1px 3px #000; /* Safari */
-    -ms-box-shadow: -1px 1px 3px #000; /* IE */
-    -o-box-shadow: -1px 1px 3px #000; /* Opera */
-    box-shadow: -1px 1px 3px #000;
+.menuItem {
+
 }
-.spoke {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    -moz-border-radius: 250px; /* Firefox */
-    -webkit-border-radius: 250px; /* Safari */
-    -ms-border-radius: 250px; /* IE */
-    -o-border-radius: 250px; /* Opera */
-    border-radius: 250px;
-    clip: rect(0px, 250px, 500px, 0px);
+.socialButton {
+
 }
-.hold {
-    position: absolute;
-    background-color: #1b458b;
-    width: 500px;
-    height: 500px;
-    -moz-border-radius: 250px; /* Firefox */
-    -webkit-border-radius: 250px; /* Safari */
-    -ms-border-radius: 250px; /* IE */
-    -o-border-radius: 250px; /* Opera */
-    border-radius: 250px;
-    clip: rect(0px, 500px, 500px, 250px);
+
+
+/*IDs*/
+#topBar {
+
 }
-#wheelSpokeBlue .spoke {
-    background-color: #1b458b;
-    -moz-transform:rotate(180deg); /* Firefox */
-    -webkit-transform:rotate(180deg); /* Safari */
-    -ms-transform:rotate(180deg); /* IE */
-    -o-transform:rotate(180deg); /* Opera */
-    transform:rotate(180deg);
+#contentContainer {
+
 }
-#wheelSpokeBlue2 {
-    -moz-transform:rotate(180deg); /* Firefox */
-    -webkit-transform:rotate(180deg); /* Safari */
-    -ms-transform:rotate(180deg); /* IE */
-    -o-transform:rotate(180deg); /* Opera */
-    transform:rotate(180deg);
+#nameTag {
+
 }
-#wheelSpokeBlue2 .spoke {
-    background-color: #1b458b;
-    -moz-transform:rotate(40deg); /* Firefox */
-    -webkit-transform:rotate(40deg); /* Safari */
-    -ms-transform:rotate(40deg); /* IE */
-    -o-transform:rotate(40deg); /* Opera */
-    transform:rotate(40deg);
+#firstName {
+
 }
-#wheelSpokeRed {
-    -moz-transform:rotate(220deg); /* Firefox */
-    -webkit-transform:rotate(220deg); /* Safari */
-    -ms-transform:rotate(220deg); /* IE */
-    -o-transform:rotate(220deg); /* Opera */
-    transform:rotate(220deg);
+#lastName {
+
 }
-#wheelSpokeRed .spoke {
-    background-color: #cc0000;
-    -moz-transform:rotate(140deg); /* Firefox */
-    -webkit-transform:rotate(140deg); /* Safari */
-    -webkit-transform:rotate(140deg); /* IE */
-    -o-transform:rotate(140deg); /* Opera */
-    transform:rotate(140deg);
+#title {
+
+}
+#avatarSocialContainer {
+
+}
+#avatar {
+
+}
+#socialConnect {
+
+}
+#twitterButton {
+
+}
+#facebookButton {
+
+}
+#googlePlusButton {
+
+}
+#linkedinButton {
+
+}
+#bottomBar {
+
 }
