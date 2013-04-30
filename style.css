@@ -1,76 +1,153 @@
-body {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
 	margin: 0;
 	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
 	background-color: grey;
+	font-family: "Times New Roman";
 }
-::root {
-	/*diameter variable for the circle */
-	-moz-var-diameter: 1000px; /* Firefox */
-    -webkit-var-diameter: 1000px; /* Safari */
-    -ms-var-diameter: 1000px; /* IE */
-    -o-var-diameter: 1000px; /* Opera */
-    var-diameter: 1000px;
-    	
-    /*radius variable for the circle */
-    -moz-var-radius: 500px; /* Firefox */
-    -webkit-var-radius: 500px; /* Safari */
-    -ms-var-radius: 500px; /* IE */
-    -o-var-radius: 500px; /* Opera */
-    var-radius: 500px;
-}
+a{
+	color:#FFFFFF;
+	text-decoration: none;
+} /* unvisited link */
+a:visited {
+	color:#FFFFFF;
+	text-decoration: none;
+} /* visited link */
+a:hover, a:active{
+	color:#FFFFFF;
+	text-decoration: none;
+} /* mouse over link, selected link */
 
 /*classes*/
-.menuBar {
+.menuBar{
+	width: auto;
+	background-color: black;
+}
+.socialButton{
 
 }
-.menuItem {
-
-}
-.socialButton {
-
-}
-
 
 /*IDs*/
-#topBar {
 
+/*top menu bar*/
+#topMenuBarBackground{
+	height: 75px;
 }
-#contentContainer {
-
+#topBar{
+	height: 75px;
+	margin: 0 auto;
+	display: table;
 }
-#nameTag {
-
+#navigationContainer{
+	display: table-cell;
+	vertical-align: middle;
 }
-#firstName {
-
+#navigationContainer ul{
+	text-align: center;
+	display: block;
 }
-#lastName {
-
+#navigationContainer li{
+	height: 75px;
+	list-style: none;
+	display: inline;
 }
-#title {
-
+#navigationContainer a{
+	margin: 0;
+	padding-top: 21px;
+	padding-right:20px;
+	padding-bottom: 22px;
+	padding-left:20px;
+	font-size: 1.5em;
+	text-align: center;
+	font-family: helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
 }
-#avatarSocialContainer {
-
+#navigationContainer a:hover, a:active{
+	background-color: grey;
 }
-#avatar {
-
+/*site container*/
+#siteContainer{
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
 }
-#socialConnect {
-
+#contentContainer{
+	padding: 20px;
 }
-#twitterButton {
-
+/*name tag*/
+#nameTag{
+	float:left;
+	padding-top: 100px;
 }
-#facebookButton {
-
+#nameTag li{
+	list-style: none;
+	font-family: "Times New Roman";
+	font-size: 2em;
 }
-#googlePlusButton {
-
+#firstName{
+	color: black;
 }
-#linkedinButton {
-
+#lastName{
+	color: black;
 }
-#bottomBar {
-
+#title{
+	color: black;
+}
+/*avatar and social connector*/
+#avatarSocialContainer{
+	float: left;
+}
+/*avatar*/
+#avatar{
+	border: none;
+	float: left;
+	padding-left: 10px;
+}
+#avatar img{
+	width: 300px;
+}
+/*social connector*/
+#socialContainer{
+	float: left;
+	padding-top: 125px;
+	padding-left: 10px;
+}
+#socialContainer li{
+	list-style: none;
+}
+/*bottom menu bar*/
+#bottomMenuBarBackground{
+	height: 75px;
+	clear:both;
+}
+#bottomBar{
+	height: 75px;
+	font-family: helvetica;
+	display: table;
+}
+#copyrightContainer{
+	display: table-cell;
+	vertical-align: middle;	
+}
+#copyrightContainer p{
+	color: white;
+	padding-left: 20px;
 }
