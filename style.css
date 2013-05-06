@@ -18,8 +18,9 @@ time, mark, audio, video{
 }
 
 body{
-	background-color: grey;
-	font-family: "Times New Roman";
+	background-image:url('background.png');
+	font-family: 'Roboto', sans-serif;
+	color: white;
 }
 a{
 	color:#FFFFFF;
@@ -37,7 +38,7 @@ a:hover, a:active{
 /*classes*/
 .menuBar{
 	width: auto;
-	background-color: black;
+	background-color: #101010;
 }
 .socialButton{
 
@@ -48,11 +49,19 @@ a:hover, a:active{
 /*top menu bar*/
 #topMenuBarBackground{
 	height: 75px;
+	border-bottom-color: #434343;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
 }
 #topBar{
 	height: 75px;
 	margin: 0 auto;
 	display: table;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 #navigationContainer{
 	display: table-cell;
@@ -75,55 +84,62 @@ a:hover, a:active{
 	padding-left:20px;
 	font-size: 1.5em;
 	text-align: center;
-	font-family: helvetica;
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: white;
+	color: #DBDBDB;
 }
 #navigationContainer a:hover, a:active{
-	background-color: grey;
+	background-color: #434343;
 }
+
 /*site container*/
 #siteContainer{
 	margin-left:auto;
 	margin-right:auto;
 	width:1000px;
+	padding: 30px;
+	overflow: hidden;
 }
-#contentContainer{
-	padding: 20px;
-}
+
 /*name tag*/
 #nameTag{
-	float:left;
-	padding-top: 100px;
+	float: left;
 }
 #nameTag li{
 	list-style: none;
-	font-family: "Times New Roman";
+}
+#nameTag li h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.5em;
+}
+#nameTag li h1 span.firstName{
+	color: #1793b8;
+}
+#nameTag li h1 span.lastName{
+	color: #81c341;
+}
+#nameTag li h2{
+	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
+	line-height: 50%
+	color: #DBDBDB;
 }
-#firstName{
-	color: black;
-}
-#lastName{
-	color: black;
-}
-#title{
-	color: black;
-}
+
 /*avatar and social connector*/
 #avatarSocialContainer{
 	float: left;
+	padding-left: 300px;
 }
 /*avatar*/
 #avatar{
 	border: none;
 	float: left;
-	padding-left: 10px;
 }
 #avatar img{
 	width: 300px;
 }
+
 /*social connector*/
 #socialContainer{
 	float: left;
@@ -133,21 +149,41 @@ a:hover, a:active{
 #socialContainer li{
 	list-style: none;
 }
+
+/*content container*/
+#contentContainer{
+	position: absolute; /*YUCK!*/
+	clear:both;
+	padding-top: 120px;
+	width: 500px;
+}
+
 /*bottom menu bar*/
 #bottomMenuBarBackground{
 	height: 75px;
-	clear:both;
+	clear: both;
+	border-top-color: #434343;
+	border-top-width: 1px;
+	border-top-style: solid;
+	width: 100%;
+	position: fixed;
+    bottom: 0;
 }
 #bottomBar{
 	height: 75px;
-	font-family: helvetica;
+	font-family: 'Roboto', sans-serif;
 	display: table;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	padding-left: 30px;
+	padding-right: 30px;
+	overflow: hidden;
 }
 #copyrightContainer{
 	display: table-cell;
 	vertical-align: middle;	
 }
 #copyrightContainer p{
-	color: white;
-	padding-left: 20px;
+	color: #DBDBDB;
 }
