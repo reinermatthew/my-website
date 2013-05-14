@@ -18,9 +18,9 @@ time, mark, audio, video{
 }
 
 body{
-	background-image:url('background.png');
+	background-image:url(images/background.png);
 	font-family: 'Roboto', sans-serif;
-	color: white;
+	color: #DBDBDB;
 }
 a{
 	color:#FFFFFF;
@@ -34,17 +34,11 @@ a:hover, a:active{
 	color:#FFFFFF;
 	text-decoration: none;
 } /* mouse over link, selected link */
-
-/*classes*/
 .menuBar{
 	width: auto;
 	background-color: #101010;
 }
-.socialButton{
 
-}
-
-/*IDs*/
 
 /*top menu bar*/
 #topMenuBarBackground{
@@ -98,7 +92,7 @@ a:hover, a:active{
 	margin-left:auto;
 	margin-right:auto;
 	width:1000px;
-	padding: 30px;
+	padding: 50px;
 	overflow: hidden;
 }
 
@@ -123,39 +117,70 @@ a:hover, a:active{
 	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
 	line-height: 50%
-	color: #DBDBDB;
 }
 
 /*avatar and social connector*/
 #avatarSocialContainer{
-	float: left;
-	padding-left: 300px;
+	float: right;
 }
-/*avatar*/
 #avatar{
-	border: none;
+	width: 420px;
 	float: left;
-}
-#avatar img{
-	width: 300px;
+	z-index: 1;
 }
 
 /*social connector*/
 #socialContainer{
-	float: left;
-	padding-top: 125px;
-	padding-left: 10px;
+	float: right;
+	position: relative;
+	right: 70px;
+	top: 5px;
+	z-index: 2;
 }
 #socialContainer li{
 	list-style: none;
 }
 
+.socialButton a,
+.socialButton a:link:hover,
+.socialButton a:visited,
+.socialButton a:visited:hover,
+.socialButton a:before,
+.socialButton a img{
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #DBDBDB;
+	border: solid 1px #434343;
+}
+#gitHubButton{
+	background-image: url(images/gitHubDark.png);
+}
+#twitterButton{
+	background-image: url(images/twitterDark.png);
+}
+#googlePlusButton{
+	background-image: url(images/googlePlusDark.png);
+}
+#facebookButton{
+	background-image: url(images/facebookDark.png);
+}
+#linkedInButton{
+	background-image: url(images/linkedInDark.png);
+}
+
+
 /*content container*/
 #contentContainer{
-	position: absolute; /*YUCK!*/
-	clear:both;
-	padding-top: 120px;
+	padding-top: 30px;
+	padding-right: 30px;
 	width: 500px;
+	overflow: hidden;
+	text-align: justify;
 }
 
 /*bottom menu bar*/
@@ -182,8 +207,8 @@ a:hover, a:active{
 }
 #copyrightContainer{
 	display: table-cell;
-	vertical-align: middle;	
+	vertical-align: middle;
 }
-#copyrightContainer p{
-	color: #DBDBDB;
+#webHost Container{
+	background-image: url(images/webHost.png);
 }
