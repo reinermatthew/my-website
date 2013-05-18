@@ -1,10 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Matt Reiner | About</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Matt Reiner | About</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="blog.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  		ga('create', 'UA-41014227-2', 'mattreiner.com');
+  		ga('send', 'pageview');
+	</script>
 </head>
 <body>
+	<!--top menu bar-->
+	<div id="topMenuBarBackground" class ="menuBar">
+		<div id="topBar">
+			<div id="navigationContainer">
+				<ul>
+					<li>
+						<a href="main.html">Home</a>
+					</li>
+					<li>
+						<a href="portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="photos.html">Photos</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!--site container-->
+	<div id="siteContainer">
+	
+		<!--Name and description-->
+		<div id="nameTag">
+			<ul>
+				<li>
+					<div id="name"><h1><span class="firstName">Matt</span><span class="lastName">Reiner</span></h1></div>
+				</li>
+				<li>
+					<div id="title"><h2>Web Developer</h2></div>
+				</li>
+			</ul>
+		</div>			
+		
+		<!--avatar and social button container-->
+		<div id="avatarSocialContainer">
+		
+			<!--avatar photo, do this make me look fat?-->
+			<img src="images/avatar.png" id="avatar" alt="Odd, Matt should totally be here...">
 
+			<!--Social buttons-->
+			<div id="socialContainer">
+				<ul>
+					<!--gitHub button-->
+					<li>
+						<a title="Matt's GitHub profile" href="https://github.com/reinermatthew" target="_blank" id="gitHubButton" class="socialButton"></a>
+					</li>
+					<!--twitter button-->
+					<li>
+						<a title="Matt's Twitter profile" href="http://twitter.com/reinermatthew" target="_blank" id="twitterButton" class="socialButton"></a>
+					</li>
+					<!--google+ button-->
+					<li>
+						<a title="Matt's Google+ profile" href="http://plus.google.com/115387737707581963147" target="_blank" id="googlePlusButton" class="socialButton"></a>
+					</li>
+					<!--facebook button-->
+					<li>
+						<a title="Matt's Facebook profile" href="http://www.facebook.com/reinermatthew" target="_blank" id="facebookButton" class="socialButton"></a>
+					</li>
+					<!--linkedin button-->
+					<li>
+						<a title="Matt's LinkedIn profile" href="http://www.linkedin.com/in/matthewreiner" target="_blank" id="linkedInButton" class="socialButton"></a>
+					</li>
+				</ul>
+			</div>
+					
+		</div>
+	
+		<!--content container-->
+		<div id="contentContainer">
+			<!--###PUT CONTENT HERE###-->
+		</div>
+		
+	</div>
+	
+	<!--bottom menu bar-->
+	<div id="bottomMenuBarBackground" class ="menuBar">
+		<div id="bottomBar">
+			
+			<div id="siteInfo">
+				<!--copyright info-->
+				<p id="copyright">&copy Copyright Matt Reiner 2013</p>
+	
+				<!--webHost.io note-->
+				<p id="webHostNote">Hosting by</p>
+			
+				<!--webHost.io logo-->
+				<a href="http://www.webhost.io" target="_blank"></a>
+			</div>
+			
+		</div>
+	</div>
+	
 </body>
 </html>

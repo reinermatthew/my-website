@@ -2,9 +2,8 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+small, strike, strong, sub, sup, tt, var, center, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
@@ -23,11 +22,11 @@ body{
 	color: #DBDBDB;
 }
 a{
-	color:#FFFFFF;
+	color:#1793b8;
 	text-decoration: none;
 } /* unvisited link */
 a:visited {
-	color:#FFFFFF;
+	color:#81c341;
 	text-decoration: none;
 } /* visited link */
 a:hover, a:active{
@@ -129,50 +128,137 @@ a:hover, a:active{
 	z-index: 1;
 }
 
-/*social connector*/
+/*social container*/
 #socialContainer{
 	float: right;
 	position: relative;
-	right: 70px;
-	top: 5px;
+	right: 77px;
+	top: -3px;
 	z-index: 2;
 }
 #socialContainer li{
 	list-style: none;
 }
 
-.socialButton a,
-.socialButton a:link:hover,
-.socialButton a:visited,
-.socialButton a:visited:hover,
-.socialButton a:before,
-.socialButton a img{
+/*social buttons*/
+.socialButton,
+.socialButton:visited,
+.socialButton:before{
+	display: block;
 	width: 40px;
 	height: 40px;
-	margin-top: 5px;
-	margin-bottom: 5px
 	border-radius: 50%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: solid 1px #434343;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: #DBDBDB;
-	border: solid 1px #434343;
+	box-shadow:1px 1px 2px #000;
+	opacity:0.95;
 }
+.socialButton:link:hover,
+.socialButton:visited:hover{
+	box-shadow:0 0 2px #222 inset;
+	background-color: #DBDBDB;
+	opacity:1;
+}
+.socialButton:link:active,
+.socialButton:visited:active{
+	box-shadow:0 0 2px #222 inset;
+	background-color: #3B5998;
+	opacity:1;
+}
+
+/*github button*/
 #gitHubButton{
 	background-image: url(images/gitHubDark.png);
 }
+#gitHubButton:link:hover,
+#gitHubButton:visited:hover{
+	background-image: url(images/gitHubLight.png);
+	box-shadow:0 0 2px #222 inset;
+	background-color: #4183c4;
+	opacity:1;
+}
+#gitHubButton:link:active,
+#gitHubButton:visited:active{
+	box-shadow:0 0 2px #222 inset;
+	background-color: #101010;
+	opacity:1;
+}
+
+/*twitter button*/
 #twitterButton{
 	background-image: url(images/twitterDark.png);
 }
+#twitterButton:link:hover,
+#twitterButton:visited:hover{
+	background-image: url(images/twitterLight.png);
+	box-shadow:0 0 2px #222 inset;
+	background-color: #1AB2E8;
+	opacity:1;
+}
+#twitterButton:link:active,
+#twitterButton:visited:active{
+	box-shadow:0 0 2px #222 inset;
+	background-color: #101010;
+	opacity:1;
+}
+
+/*google+ button*/
 #googlePlusButton{
 	background-image: url(images/googlePlusDark.png);
 }
+#googlePlusButton:link:hover,
+#googlePlusButton:visited:hover{
+	background-image: url(images/googlePlusLight.png);
+	box-shadow:0 0 2px #222 inset;
+	background-color: #DB4A39;
+	opacity:1;
+}
+#googlePlusButton:link:active,
+#googlePlusButton:visited:active{
+	box-shadow:0 0 2px #222 inset;
+	background-color: #101010;
+	opacity:1;
+}
+
+/*facebook button*/
 #facebookButton{
 	background-image: url(images/facebookDark.png);
 }
+#facebookButton:link:hover,
+#facebookButton:visited:hover{
+	background-image: url(images/facebookLight.png);
+	box-shadow:0 0 2px #222 inset;
+	background-color: #3B5998;
+	opacity:1;
+}
+#facebookButton:link:active,
+#facebookButton:visited:active{
+	box-shadow:0 0 2px #222 inset;
+	background-color: #101010;
+	opacity:1;
+}
+
+/*linkedin button*/
 #linkedInButton{
 	background-image: url(images/linkedInDark.png);
 }
-
+#linkedInButton:link:hover,
+#linkedInButton:visited:hover{
+	background-image: url(images/linkedInLight.png);
+	box-shadow:0 0 2px #222 inset;
+	background-color: #0E76A8;
+	opacity:1;
+}
+#linkedInButton:link:active,
+#linkedInButton:visited:active{
+	box-shadow:0 0 2px #222 inset;
+	background-color: #101010;
+	opacity:1;
+}
 
 /*content container*/
 #contentContainer{
@@ -205,10 +291,17 @@ a:hover, a:active{
 	padding-right: 30px;
 	overflow: hidden;
 }
-#copyrightContainer{
+#siteInfo{
 	display: table-cell;
 	vertical-align: middle;
+	font-size: .75em;
+	float: right;
+	text-align: right;
 }
-#webHost Container{
-	background-image: url(images/webHost.png);
+#siteInfo a{
+	background-image: url(images/webHostLogo.png);
+	text-decoration: none;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
 }

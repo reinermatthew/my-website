@@ -1,72 +1,37 @@
-*{ 
-padding:0; 
-margin:0;
-}
-
-body{ font:100% normal Arial, Helvetica, sans-serif;}
-
-.rollover_img {
-
-width: 280px;
-
-height: 150px;
-
-background-image: url(background.png); 
-
+.landscapePhotoContainer {
+width: 500px;
+height: 333px;
+background-image: url(images/avatar.png); 
 background-position: top;
-
--moz-border-radius:3px;
-
--webkit-border-radius:3px;
-
+border-radius:10px;
 border:3px solid #ccc;
-
 font:13px normal Arial, Helvetica, sans-serif;
-
 line-height:18px;
-
 float:left;
-
 margin:0 10px 10px 0;
-
 }
 
-.rollover_img a {
-
+.landscapePhotoContainer a {
 color: #fff;
-
-width: 280px;
-
-height: 150px;
-
+width: 500px;
+height: 333px;
 display: block;
-
 text-decoration: none;
-
 }
 
-.rollover_img a:hover {
-
-background:#000;
-
-opacity:.60;
-
-filter:alpha(opacity=60);
-
+.landscapePhotoContainer a:hover {
+	background:#000;
+	opacity:.60;
+	filter:alpha(opacity=60);
+	border-radius:10px;
 }
 
-.rollover_img a span {
-
-display: none;
-
-width: 280px;
-
-padding:5px;
-
+.landscapePhotoContainer a span {
+	display: none;
+	width: 480px;
+	padding:10px;
 }
 
-.rollover_img a:hover span {
-
-display: block;
-
+.landscapePhotoContainer a:hover span {
+	display: block;
 }
