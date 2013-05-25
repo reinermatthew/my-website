@@ -1,37 +1,102 @@
+/*landscape photo container*/
 .landscapePhotoContainer {
-width: 500px;
-height: 333px;
-background-image: url(images/avatar.png); 
-background-position: top;
-border-radius:10px;
-border:3px solid #ccc;
-font:13px normal Arial, Helvetica, sans-serif;
-line-height:18px;
-float:left;
-margin:0 10px 10px 0;
-}
-
-.landscapePhotoContainer a {
-color: #fff;
-width: 500px;
-height: 333px;
-display: block;
-text-decoration: none;
-}
-
-.landscapePhotoContainer a:hover {
-	background:#000;
-	opacity:.60;
-	filter:alpha(opacity=60);
+	width: 500px;
+	height: 333px; 
+	background-position: top;
+	background-size:500px 333px;
+	background-repeat:no-repeat;
 	border-radius:10px;
+	border:3px solid #DBDBDB;
+	line-height:18px;
+	float:left;
+	margin:0 0px 30px 0;
 }
-
+.landscapePhotoContainer a {
+	color: #DBDBDB;
+	width: 500px;
+	height: 333px;
+	display: block;
+	text-decoration: none;
+}
 .landscapePhotoContainer a span {
 	display: none;
 	width: 480px;
 	padding:10px;
 }
-
+.landscapePhotoContainer a:hover {
+	background:#000000;
+	opacity:.60;
+	filter:alpha(opacity=60);
+	border-radius:8px;
+}
 .landscapePhotoContainer a:hover span {
 	display: block;
+}
+
+/*portrait photo container*/
+.portraitPhotoContainer {
+	width: 232px;
+	height: 348px;
+	background-position: top;
+	background-size:232px 348px;
+	background-repeat:no-repeat;
+	border-radius:10px;
+	border:3px solid #DBDBDB;
+	line-height:18px;
+	float:left;
+	margin:0 30px 30px 0;
+}
+.portraitPhotoContainer a {
+	color: #DBDBDB;
+	width: 232px;
+	height: 348px;
+	display: block;
+	text-decoration: none;
+}
+.portraitPhotoContainer a span {
+	display: none;
+	width: 212px;
+	padding:10px;
+}
+.portraitPhotoContainer a:hover {
+	background:#000000;
+	opacity:.60;
+	filter:alpha(opacity=60);
+	border-radius:8px;
+}
+.portraitPhotoContainer a:hover span {
+	display: block;
+}
+
+/*photos*/
+#photoMatt{
+	background-image: url(photos/matt.jpg);
+}
+#photoKalene{
+	background-image: url(photos/kalene.jpg);
+	margin:0 0px 30px 0;	
+}
+#photoMattAndKalene1{
+	background-image: url(photos/mattAndKalene1.jpg);
+	
+}
+#photoMattAndKalene2{
+	background-image: url(photos/mattAndKalene2.jpg);
+	
+}
+#photoWedding{
+	background-image: url(photos/wedding.jpg);
+	margin:0 0px 30px 0;
+}
+#photoGomer{
+	background-image: url(photos/gomer.jpg);
+}
+#photoSiblings{
+	background-image: url(photos/siblings.jpg);
+}
+#photoTheKids{
+	background-image: url(photos/theKids.jpg);
+}
+#photoFriends{
+	background-image: url(photos/friends.jpg);
 }

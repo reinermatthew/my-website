@@ -1,0 +1,41 @@
+/*landscape photo container*/
+.portfolioItemContainer {
+	width: 500px;
+	height: 375px; 
+	background-position: top;
+	background-size:500px 375px;
+	background-repeat:no-repeat;
+	border-radius:10px;
+	border:3px solid #DBDBDB;
+	line-height:18px;
+	float:left;
+	margin:0 0px 30px 0;
+}
+.portfolioItemContainer a {
+	color: #DBDBDB;
+	width: 500px;
+	height: 375px;
+	display: block;
+	text-decoration: none;
+}
+.portfolioItemContainer a span {
+	display: none;
+	width: 480px;
+	padding:10px;
+	vertical-align: bottom;
+}
+.portfolioItemContainer a:hover {
+	background:#000000;
+	opacity:.60;
+	filter:alpha(opacity=60);
+	border-radius:8px;
+}
+.portfolioItemContainer a:hover span {
+	display: block;
+}
+
+
+/*photos*/
+#mattReinerCom{
+	background-image: url(portfolio/mattReinerCom.jpg);
+}

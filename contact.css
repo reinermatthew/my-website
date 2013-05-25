@@ -1,0 +1,35 @@
+/*email button*/
+.button,
+.button:before,
+.button:visited{
+	/*button*/
+	display: inline-block;
+   	padding: 10px 20px;
+	background: #1793b8;
+	border-radius: 8px;
+	box-shadow:1px 1px 2px #000000;
+	border: solid 1px #434343;
+	opacity:0.95;
+	/*text*/
+	font-size: 2em;
+	color: #DBDBDB;
+	text-decoration: none;
+   	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   	vertical-align: middle;
+}
+.button:link:hover,
+.button:visted:hover{
+	box-shadow:0 0 2px #222 inset;
+	color: #DBDBDB;
+	opacity:1;
+}
+
+.button:link:active,
+.button:visited:active{
+	box-shadow:0 0 2px #222 inset;
+	color: #DBDBDB;
+	opacity:1;
+}
+#email{
+	margin-left: 0px;
+}

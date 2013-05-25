@@ -21,22 +21,30 @@ body{
 	font-family: 'Roboto', sans-serif;
 	color: #DBDBDB;
 }
-a{
+
+/*links*/
+a,
+a:visited,
+a:before{
 	color:#1793b8;
 	text-decoration: none;
-} /* unvisited link */
-a:visited {
+} /*link*/
+a:hover,
+a:visited:hover{
 	color:#81c341;
 	text-decoration: none;
-} /* visited link */
-a:hover, a:active{
-	color:#FFFFFF;
+} /*mouse over link*/
+a:link:active,
+a:visited:active{
+	color:#DBDBDB;
 	text-decoration: none;
-} /* mouse over link, selected link */
+} /*selected link*/
+
 .menuBar{
 	width: auto;
 	background-color: #101010;
 }
+
 
 
 /*top menu bar*/
@@ -154,7 +162,7 @@ a:hover, a:active{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: #DBDBDB;
-	box-shadow:1px 1px 2px #000;
+	box-shadow:1px 1px 2px #000000;
 	opacity:0.95;
 }
 .socialButton:link:hover,
@@ -263,15 +271,14 @@ a:hover, a:active{
 /*content container*/
 #contentContainer{
 	padding-top: 30px;
-	padding-right: 30px;
-	width: 500px;
+	width: 530px;
 	overflow: hidden;
 	text-align: justify;
 }
 
 /*bottom menu bar*/
 #bottomMenuBarBackground{
-	height: 75px;
+	height: 62px;
 	clear: both;
 	border-top-color: #434343;
 	border-top-width: 1px;
@@ -279,9 +286,10 @@ a:hover, a:active{
 	width: 100%;
 	position: fixed;
     bottom: 0;
+    z-index: 3;
 }
 #bottomBar{
-	height: 75px;
+	height: 62px;
 	font-family: 'Roboto', sans-serif;
 	display: table;
 	margin-left:auto;
@@ -291,17 +299,24 @@ a:hover, a:active{
 	padding-right: 30px;
 	overflow: hidden;
 }
-#siteInfo{
+#copyrightInfo{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: .75em;
+	float: left;
+	margin-top: 2px;
+}
+#hostingInfo{
 	display: table-cell;
 	vertical-align: middle;
 	font-size: .75em;
 	float: right;
-	text-align: right;
+	margin-top: 2px;
 }
-#siteInfo a{
+#hostingInfo a{
 	background-image: url(images/webHostLogo.png);
 	text-decoration: none;
 	display: inline-block;
-	width: 40px;
+	width: 55px;
 	height: 40px;
 }
